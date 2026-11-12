@@ -26,12 +26,14 @@ approve a prompt), say exactly what to click, then continue.
   never the frames.
 - Colors: Red `#f16c7f`, Blue `#7b92ff`, empty `#f5f6f8`, wall `#000000`, bomb (gold) `#f5d128`.
   Paint only with your team's exact hex value.
-- The map (all of it is in `board.json`): the **vault** in the centre (P15–U20) is a walled ring
-  with a 2-wide door on each side and 4 bombs inside (R17, S17, R18, S18) that set each other off:
-  the biggest swing in the game. Two diagonal **ridges** (F21–N13 and W22–AE14) split the board into
-  the central lane and two flanks; the one gap in each ridge is a bomb (J17, AA18) that blasts
-  across. Each base has a short **shield wall** in front of it (G26–I28 for Red, AB7–AD9 for Blue).
-  The empty corners (top left, bottom right) hold **bomb fields**, equally far from both bases.
+- The map (all of it is in `board.json`) is **the Diamond**: a big diamond wall fills the middle,
+  with a 2-wide gate in the middle of each side. Red's home gate faces bottom left (M23, N24), Blue's
+  top right (W11, X12); the other two (M12, N11 and W24, X23) are open to both. Inside the diamond,
+  the **jewel**: 4 chained bombs (R17, S17, R18, S18) that flip a 4 × 4 block every time they change
+  hands. More bombs: just inside each home gate (P21, U14), on the side lanes outside the diamond's
+  tips (F17, AE18), chained pairs outside the top and bottom tips (R4, S4 and R31, S31), and chained
+  pairs in the empty corners (G7, H8 and AC27, AD28), each behind a 2-square wall (F8, G9 and AD26,
+  AE27) so you reach them from around the wall.
 - Bases: + shaped, 5 squares each, in opposite corners. Red owns E30 (centre), D30, F30, E29, E31
   (bottom left); Blue owns AF5 (centre), AE5, AG5, AF4, AF6 (top right).
 
@@ -53,8 +55,9 @@ approve a prompt), say exactly what to click, then continue.
    frozen for 5 seconds.
 
 **Strategy that works:** while the shields are up, grow territory (it decides the game at 30 minutes),
-race for the vault (whoever sets it off flips a big block at once), grab the corner bomb fields and
-the ridge-gap bombs, and get your line right next to the enemy base so you can strike the moment the shield
+race through your home gate for the jewel (whoever sets it off flips a big block at once), hold the
+gates (losing them greys everything you hold inside the diamond), grab the lane and corner bombs, and
+get your line right next to the enemy base, around the diamond or through it so you can strike the moment the shield
 drops: Red heads for the top right (an arm like AE5 from AD5, or AF6 from AF7, then the centre AF5);
 Blue heads for the bottom left (F30 from G30, or E29 from E28, then the centre E30). The bases are
 far apart, so leave some players home to defend. Then: keep a solid line back to your base (your own squares can be cut off too),
