@@ -7,7 +7,7 @@ program keeps everyone honest. Everyone plays at the same time.
 **The board:** https://miro.com/app/board/uXjVEO7YzFE=/
 
 **Rules** (also on the board): capture squares that touch your team; enemy squares count too.
-💥 Gold squares are bombs. ✂️ Squares cut off from their base go grey. 🛡 Bases are shielded for the
+💥 Gold squares are bombs (and they set each other off). ✂️ Squares cut off from their base go grey. 🛡 Bases are shielded for the
 first 18 minutes; after that, take all four enemy base squares (each needs 2 of yours touching it) and
 their whole army is cut off: **your team wins**. After 30 minutes, the team with the most squares wins.
 
@@ -15,8 +15,8 @@ You don't need to code. You type two commands: `/join` once, then `/play`.
 
 ## Quick start (one prompt, no restart)
 
-First accept the Miro invite from your instructor (check your email) and open the board:
-https://miro.com/app/board/uXjVEO7YzFE=/ . Then open Claude Code in any folder (`claude`) and paste:
+First accept your instructor's invite to the **ASU CIS team** in Miro (check your email). The board
+opens to the team when your instructor starts the game: https://miro.com/app/board/uXjVEO7YzFE=/ . Then open Claude Code in any folder (`claude`) and paste:
 
 ```text
 Set me up and play Color Wars. 1) Clone https://github.com/ashwanthbalakrishnan5/color-wars.git into ~/color-wars (if it already exists, git pull there instead). 2) Install the Miro plugin: run `claude plugin install miro@claude-plugins-official`; if that fails, run `claude plugin marketplace add miroapp/miro-ai` and then `claude plugin install miro@miro-ai`. 3) Tell me, in two short lines, to type /reload-plugins, then /mcp, choose miro, Authenticate, and pick the Miro team that owns https://miro.com/app/board/uXjVEO7YzFE=/ (ASU CIS team), and to say "done" after. Wait for me. 4) Then read ~/color-wars/AGENTS.md and follow it for the rest of this session; board.json and player.json live in ~/color-wars. Follow ~/color-wars/.claude/commands/join.md (ask me my first name and last initial), then follow ~/color-wars/.claude/commands/play.md until the game is over.
@@ -38,10 +38,11 @@ cd color-wars
 
 ## 2. Get into the Miro board
 
-1. Your instructor invites you to the board by email. Accept it, signing in to Miro (or creating a
-   free account) with your ASU email.
+1. Your instructor invites you to the **ASU CIS team** by email. Accept it, signing in to Miro (or
+   creating a free account) with your ASU email. You get the board through the team: it opens for
+   editing when the game starts and turns view-only when it ends.
 2. Open the board: https://miro.com/app/board/uXjVEO7YzFE=/ . Keep it open on screen during the game.
-   You must be able to **edit** it (not just view or comment); if you can't, tell your instructor.
+   During the game you must be able to **edit** it; if you can't, tell your instructor.
 
 ## 3. Connect your agent to Miro
 

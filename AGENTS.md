@@ -20,7 +20,7 @@ approve a prompt), say exactly what to click, then continue.
 
 - Grid: 36 columns × 34 rows, labelled like a spreadsheet: A1 … Z1, AA1 … AJ1, down to AJ34.
   Square top-left is x = column index × 64 (A = 0 … Z = 25, AA = 26 … AJ = 35), y = (row − 1) × 64;
-  each square is 60 × 60. The squares sit inside dark frames (bands of 4 rows); paint the squares,
+  each square is 60 × 60. The squares sit inside dark frames (blocks of 2 rows × 18 columns); paint the squares,
   never the frames.
 - Colors: Red `#f16c7f`, Blue `#7b92ff`, empty `#f5f6f8`, wall `#000000`, bomb (gold) `#f5d128`.
   Paint only with your team's exact hex value.
@@ -31,7 +31,9 @@ approve a prompt), say exactly what to click, then continue.
 1. Paint a square your team color to capture it. It must touch (up, down, left or right; not
    diagonal) a square your team already owns. Empty and enemy squares both count.
 2. Walls (black) can't be painted.
-3. 💥 Gold squares are bombs: capturing one turns every square around it (3 × 3) your color.
+3. 💥 Gold squares are bombs: capturing one turns every square around it (3 × 3) your color. A bomb
+   caught in the blast goes off too (chain reaction), and a bomb fires again every time it changes
+   hands: the two gold squares above and below the centre block are a jackpot.
 4. ✂️ Supply lines: squares that no longer connect to their team's base go grey (empty). Cut through
    the enemy line and everything behind the cut drops out.
 5. Take all four enemy base squares and the whole enemy army is cut off: your team wins.
