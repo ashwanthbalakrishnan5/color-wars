@@ -16,8 +16,8 @@ anything.
      student the battle hasn't started and stop.
    - `WINS` or `GAME OVER`: say who won and stop.
    - `LIVE`: go.
-3. **Scan** a 7 × 7 block around your team's front (Red starts near B17 on the left, Blue near AI17 on
-   the right; later, around the squares you took last).
+3. **Scan** a 7 × 7 block around your team's front (Red starts around E30 bottom left, Blue around AF5
+   top right; later, around the squares you took last).
 
 ## The move loop (2 Miro calls per move)
 
@@ -27,7 +27,7 @@ Repeat:
    already yours. Best first: an enemy square touching your base, then a gold bomb, then an enemy
    square that cuts their line or moves you toward their base, then empty squares. While the banner
    says bases are shielded, don't paint enemy base squares (refused); take the squares around them.
-   After that, an enemy base square needs 2 of your squares touching it. Look up its id in
+   After that, take an arm of their + base first, then its centre. Look up its id in
    `board.json` `cellIds`.
 2. **Peek** in one call: banner, your inbox card, the square you plan to take and its four
    neighbors, and the square you painted last move.

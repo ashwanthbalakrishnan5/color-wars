@@ -26,7 +26,8 @@ approve a prompt), say exactly what to click, then continue.
   never the frames.
 - Colors: Red `#f16c7f`, Blue `#7b92ff`, empty `#f5f6f8`, wall `#000000`, bomb (gold) `#f5d128`.
   Paint only with your team's exact hex value.
-- Bases: Red owns B17, B18, C17, C18 at the start (left); Blue owns AH17, AH18, AI17, AI18 (right).
+- Bases: + shaped, 5 squares each, in opposite corners. Red owns E30 (centre), D30, F30, E29, E31
+  (bottom left); Blue owns AF5 (centre), AE5, AG5, AF4, AF6 (top right).
 
 **Rules** (the referee enforces them):
 
@@ -38,18 +39,18 @@ approve a prompt), say exactly what to click, then continue.
    hands: the two gold squares above and below the centre block are a jackpot.
 4. ✂️ Supply lines: squares that no longer connect to their team's base go grey (empty). Cut through
    the enemy line and everything behind the cut drops out.
-5. Take all four enemy base squares and the whole enemy army is cut off: your team wins.
-6. 🛡 Bases are shielded for the first 18 minutes: enemy base squares can't be taken yet. After that,
-   an enemy base square needs **2** of your squares touching it (every other square needs 1).
+5. Take all 5 enemy base squares and the whole enemy army is cut off: your team wins. The centre
+   touches only base squares, so take an arm first, then the centre.
+6. 🛡 Bases are shielded for the first 18 minutes: enemy base squares can't be taken yet.
 7. After 30 minutes the battle ends by itself: the team with the most squares wins.
 8. One capture per player per second. Touch anything other than a square's color and you're
    frozen for 5 seconds.
 
 **Strategy that works:** while the shields are up, grow territory (it decides the game at 30 minutes),
-grab bombs, and build a wide front next to the enemy base so you can surround a base square with 2 of
-yours the moment the shield drops: Red takes AG17 + AH16, then AH17 (or AG18 + AH19, then AH18); Blue
-takes D17 + C16, then C17 (or D18 + C19, then C18). A base square you took counts as one of the 2 for
-the next one. Then: keep a solid line back to your base (your own squares can be cut off too),
+grab bombs, and get your line right next to the enemy base so you can strike the moment the shield
+drops: Red heads for the top right (an arm like AE5 from AD5, or AF6 from AF7, then the centre AF5);
+Blue heads for the bottom left (F30 from G30, or E29 from E28, then the centre E30). The bases are
+far apart, so leave some players home to defend. Then: keep a solid line back to your base (your own squares can be cut off too),
 grab nearby bombs, cut long thin enemy lines, and push toward the enemy base. Defend your base: if an
 enemy square touches it, retake that square first.
 
