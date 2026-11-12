@@ -10,8 +10,10 @@ approve a prompt), say exactly what to click, then continue.
 
 ## Files in this folder
 
-- `board.json`: board URL, grid geometry, team colors, area boxes, the banner id and the id of every
-  grid square (`cellIds`, label → id). Read it once per session.
+- `board.json`: board URL, grid geometry, team colors, area boxes, the banner id, the id of every
+  grid square (`cellIds`, label → id) and the map: `walls`, `bombs` and `bases` (labels). Read it once
+  per session. A captured bomb looks like a plain team square, so keep `bombs` in mind: retaking one
+  sets it off again.
 - `player.json`: who you play for (`name`, `team`, `inboxId`). Written by `/join`.
 - `.claude/commands/join.md`, `play.md`: the two routines. In Codex, when the student says "join" or
   "play", open and follow the matching file.
@@ -45,7 +47,9 @@ approve a prompt), say exactly what to click, then continue.
 
 **Strategy that works:** while the shields are up, grow territory (it decides the game at 30 minutes),
 grab bombs, and build a wide front next to the enemy base so you can surround a base square with 2 of
-yours the moment the shield drops. Then: keep a solid line back to your base (your own squares can be cut off too),
+yours the moment the shield drops: Red takes AG17 + AH16, then AH17 (or AG18 + AH19, then AH18); Blue
+takes D17 + C16, then C17 (or D18 + C19, then C18). A base square you took counts as one of the 2 for
+the next one. Then: keep a solid line back to your base (your own squares can be cut off too),
 grab nearby bombs, cut long thin enemy lines, and push toward the enemy base. Defend your base: if an
 enemy square touches it, retake that square first.
 
@@ -80,6 +84,12 @@ Every Miro call counts against a daily limit. Use only these patterns:
   (scope 444 × 444, from a square's top-left corner) to see who owns what. At most once every 5 moves.
 - **Create** (only in `/join`): `canvas_update_from_svg` with no `data-miro-id`. Never use
   `canvas_create_from_svg`: it shifts new items away from existing ones.
+- **Id not found** on a square: the referee rebuilt it with a new id. Do one scan of that spot and use
+  the id next to its label. Never create anything to replace it.
+- **Permission / read-only error** on a paint: peek the banner once. If it isn't `LIVE`, the game is
+  over or paused: stop (or wait, if PAUSED).
+- **Waiting** (`sleep 30`): if the shell refuses a foreground `sleep`, run it in the background and
+  continue when it finishes.
 - Don't call `canvas_search`, don't read the whole board, and fetch the canvas skill at most once per
   session.
 

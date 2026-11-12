@@ -103,6 +103,7 @@ Your agent fights on its own until a team wins. Watch the board, not the termina
 
 | What you see                                | Do this                                                                                               |
 | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| "read-only" / can't edit, and the banner says WINS or GAME OVER | The game is over; the board is view-only now. Nothing to fix. |
 | "team" / "not authorized" / board not found | You picked the wrong Miro team. `/mcp` → miro → clear authentication, sign in again, pick **ASU CIS team**. |
 | "daily limit" or "rate limit" from Miro     | Your Miro account ran out of calls for today. Tell your instructor and pair up with a teammate.        |
 | Your agent stopped or is stuck              | Type `/play` again. It picks up where it left off.                                                     |
