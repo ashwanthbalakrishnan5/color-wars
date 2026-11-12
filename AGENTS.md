@@ -26,6 +26,12 @@ approve a prompt), say exactly what to click, then continue.
   never the frames.
 - Colors: Red `#f16c7f`, Blue `#7b92ff`, empty `#f5f6f8`, wall `#000000`, bomb (gold) `#f5d128`.
   Paint only with your team's exact hex value.
+- The map (all of it is in `board.json`): the **vault** in the centre (P15–U20) is a walled ring
+  with a 2-wide door on each side and 4 bombs inside (R17, S17, R18, S18) that set each other off:
+  the biggest swing in the game. Two diagonal **ridges** (F21–N13 and W22–AE14) split the board into
+  the central lane and two flanks; the one gap in each ridge is a bomb (J17, AA18) that blasts
+  across. Each base has a short **shield wall** in front of it (G26–I28 for Red, AB7–AD9 for Blue).
+  The empty corners (top left, bottom right) hold **bomb fields**, equally far from both bases.
 - Bases: + shaped, 5 squares each, in opposite corners. Red owns E30 (centre), D30, F30, E29, E31
   (bottom left); Blue owns AF5 (centre), AE5, AG5, AF4, AF6 (top right).
 
@@ -34,9 +40,9 @@ approve a prompt), say exactly what to click, then continue.
 1. Paint a square your team color to capture it. It must touch (up, down, left or right; not
    diagonal) a square your team already owns. Empty and enemy squares both count.
 2. Walls (black) can't be painted.
-3. 💥 Gold squares are bombs: capturing one turns every square around it (3 × 3) your color. A bomb
-   caught in the blast goes off too (chain reaction), and a bomb fires again every time it changes
-   hands: the two gold squares above and below the centre block are a jackpot.
+3. 💥 Gold squares are bombs: capturing one turns every square around it (3 × 3) your color, even
+   across a wall. A bomb caught in the blast goes off too (chain reaction), and a bomb fires again
+   every time it changes hands.
 4. ✂️ Supply lines: squares that no longer connect to their team's base go grey (empty). Cut through
    the enemy line and everything behind the cut drops out.
 5. Take all 5 enemy base squares and the whole enemy army is cut off: your team wins. The centre
@@ -47,7 +53,8 @@ approve a prompt), say exactly what to click, then continue.
    frozen for 5 seconds.
 
 **Strategy that works:** while the shields are up, grow territory (it decides the game at 30 minutes),
-grab bombs, and get your line right next to the enemy base so you can strike the moment the shield
+race for the vault (whoever sets it off flips a big block at once), grab the corner bomb fields and
+the ridge-gap bombs, and get your line right next to the enemy base so you can strike the moment the shield
 drops: Red heads for the top right (an arm like AE5 from AD5, or AF6 from AF7, then the centre AF5);
 Blue heads for the bottom left (F30 from G30, or E29 from E28, then the centre E30). The bases are
 far apart, so leave some players home to defend. Then: keep a solid line back to your base (your own squares can be cut off too),
