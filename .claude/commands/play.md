@@ -24,10 +24,10 @@ anything.
 Repeat:
 
 1. Choose ONE square: it must touch one of your squares (up/down/left/right) and not be a wall or
-   already yours. Best first: an enemy square touching your base, then a gold bomb, then an enemy
-   square that cuts their line or moves you toward their base, then empty squares. While the banner
-   says bases are shielded, don't paint enemy base squares (refused); take the squares around them.
-   After that, take an arm of their + base first, then its centre. Look up its id in
+   already yours. Follow the student's plan if they gave one; otherwise the default plan in
+   AGENTS.md (2 of every 3 moves widen and thicken your territory, around your base first; 1 pushes
+   forward). Always first: an enemy square touching your base. Then prefer a gold bomb, an enemy
+   square that cuts their line, and on enemy bases an arm first, then the centre. Look up its id in
    `board.json` `cellIds`.
 2. **Peek** in one call: banner, your inbox card, the square you plan to take and its four
    neighbors, and the square you painted last move.

@@ -49,25 +49,24 @@ approve a prompt), say exactly what to click, then continue.
    the enemy line and everything behind the cut drops out.
 5. Take all 5 enemy base squares and the whole enemy army is cut off: your team wins. The centre
    touches only base squares, so take an arm first, then the centre.
-6. 🛡 Bases are shielded for the first 18 minutes: enemy base squares can't be taken yet.
-7. The battle ends when a team is wiped out, or when the instructor stops it (then the team with the
+6. The battle ends when a team is wiped out, or when the instructor stops it (then the team with the
    most squares wins).
-8. One capture per player per second. Touch anything other than a square's color and you're
+7. One capture per player per second. Touch anything other than a square's color and you're
    frozen for 5 seconds.
 
-**Strategy that works:** while the shields are up, grow territory (it wins if the instructor stops the game),
-race through your home gate for the jewel (whoever sets it off flips a big block at once), hold the
-gates (losing them greys everything you hold inside the diamond), grab the lane and corner bombs, and
-get your line right next to the enemy base, around the diamond or through it so you can strike the moment the shield
-drops: Red heads for the top right (an arm like AE5 from AD5, or AF6 from AF7, then the centre AF5);
-Blue heads for the bottom left (F30 from G30, or E29 from E28, then the centre E30). The bases are
-far apart, so leave some players home to defend. Then: keep a solid line back to your base (your own squares can be cut off too),
-grab nearby bombs, cut long thin enemy lines, and push toward the enemy base. Defend your base: if an
-enemy square touches it, retake that square first.
+**Default plan: attack and defend at once, growing in breadth.** Don't run in one straight line. Of
+every 3 moves, make 2 that widen and thicken your team's territory (around your base first, then
+along your front, so it is at least 2 squares deep) and 1 that pushes forward: toward a bomb, a gate,
+the jewel or the enemy base. Red's base is bottom left, so Red pushes toward the top right (an arm
+like AE5 from AD5, or AF6 from AF7, then the centre AF5); Blue pushes toward the bottom left (F30 from
+G30, or E29 from E28, then the centre E30). Always first: retake an enemy square that touches your
+base. Wide territory also wins if the instructor stops the game, and thin lines get cut off.
+If the student tells you a plan ("attack", "defend", "go for the jewel", a square), follow it instead
+from then on.
 
 ## The board areas
 
-- **Banner** (top left): `join now` = the battle hasn't started; `LIVE` = play (it also shows how long the bases stay shielded); `PAUSED` = wait;
+- **Banner** (top left): `join now` = the battle hasn't started; `LIVE` = play; `PAUSED` = wait;
   `WINS` or `GAME OVER` = stop.
 - **Scoreboard** (next to it): squares and % per team. **Leaderboard** (right): top players.
 - **Your inbox card** (Inbox area): your team and the referee's verdict on your recent moves. Read only

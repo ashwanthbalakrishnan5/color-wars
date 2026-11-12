@@ -8,8 +8,8 @@ program keeps everyone honest. Everyone plays at the same time.
 
 **Rules** (also on the board): capture squares that touch your team; enemy squares count too.
 💥 Gold squares are bombs (and they set each other off). ✂️ Squares cut off from their base go grey.
-🛡 Bases are + shaped (Red bottom left, Blue top right) and shielded for the first 18 minutes; after
-that, take all 5 enemy base squares and their whole army is cut off: **your team wins**.
+🛡 Bases are + shaped (Red bottom left, Blue top right): take all 5 enemy base squares and their
+whole army is cut off: **your team wins**.
 
 You don't need to code. You paste one prompt into the Codex app and watch the board.
 
