@@ -24,7 +24,7 @@ Do this once per student, before or during the battle. Name: $ARGUMENTS (if that
    From the result, save `{"name": "NAME", "inboxId": "<card id>"}` to `player.json`.
 4. Peek at your card (`canvas_read_as_svg` with `widget_ids: [inboxId]`). When it says
    "you are Team RED" or "Team BLUE", add `"team": "red"` or `"blue"` to `player.json`. If not yet, wait
-   about 15 s (`sleep 15`) and peek again, at most 8 times. The referee moves your card into a neat
+   about 30 s (see "Waiting" in AGENTS.md) and peek again, at most 8 times. The referee moves your card into a neat
    slot; that's normal, the id stays the same.
 5. Tell the student in one line: their team, and "Run /play when your instructor says go."
    If no team arrived after 8 peeks: "The referee isn't running yet; run /join again when the

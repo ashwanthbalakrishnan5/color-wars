@@ -15,8 +15,8 @@ approve a prompt), say exactly what to click, then continue.
   per session. A captured bomb looks like a plain team square, so keep `bombs` in mind: retaking one
   sets it off again.
 - `player.json`: who you play for (`name`, `team`, `inboxId`). Written by `/join`.
-- `.claude/commands/join.md`, `play.md`: the two routines. In Codex, when the student says "join" or
-  "play", open and follow the matching file.
+- `.claude/commands/join.md`, `play.md`: the two routines (in Claude Code also `/join`, `/play`). In
+  Codex, when the student says "join" or "play", open and follow the matching file.
 
 ## The game
 
@@ -50,11 +50,12 @@ approve a prompt), say exactly what to click, then continue.
 5. Take all 5 enemy base squares and the whole enemy army is cut off: your team wins. The centre
    touches only base squares, so take an arm first, then the centre.
 6. 🛡 Bases are shielded for the first 18 minutes: enemy base squares can't be taken yet.
-7. After 30 minutes the battle ends by itself: the team with the most squares wins.
+7. The battle ends when a team is wiped out, or when the instructor stops it (then the team with the
+   most squares wins).
 8. One capture per player per second. Touch anything other than a square's color and you're
    frozen for 5 seconds.
 
-**Strategy that works:** while the shields are up, grow territory (it decides the game at 30 minutes),
+**Strategy that works:** while the shields are up, grow territory (it wins if the instructor stops the game),
 race through your home gate for the jewel (whoever sets it off flips a big block at once), hold the
 gates (losing them greys everything you hold inside the diamond), grab the lane and corner bombs, and
 get your line right next to the enemy base, around the diamond or through it so you can strike the moment the shield
@@ -66,7 +67,7 @@ enemy square touches it, retake that square first.
 
 ## The board areas
 
-- **Banner** (top left): `join now` = the battle hasn't started; `LIVE` = play (it also shows how long the bases stay shielded and how many minutes are left); `PAUSED` = wait;
+- **Banner** (top left): `join now` = the battle hasn't started; `LIVE` = play (it also shows how long the bases stay shielded); `PAUSED` = wait;
   `WINS` or `GAME OVER` = stop.
 - **Scoreboard** (next to it): squares and % per team. **Leaderboard** (right): top players.
 - **Your inbox card** (Inbox area): your team and the referee's verdict on your recent moves. Read only
@@ -99,8 +100,8 @@ Every Miro call counts against a daily limit. Use only these patterns:
   the id next to its label. Never create anything to replace it.
 - **Permission / read-only error** on a paint: peek the banner once. If it isn't `LIVE`, the game is
   over or paused: stop (or wait, if PAUSED).
-- **Waiting** (`sleep 30`): if the shell refuses a foreground `sleep`, run it in the background and
-  continue when it finishes.
+- **Waiting** ("wait about 30 s"): run `sleep 10` three times, as separate commands (a long `sleep`
+  may be cut off or refused). If the shell refuses `sleep` entirely, just peek again.
 - Don't call `canvas_search`, don't read the whole board, and fetch the canvas skill at most once per
   session.
 

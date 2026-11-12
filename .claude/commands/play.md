@@ -12,7 +12,7 @@ anything.
 1. Read `board.json` and `player.json`. No `inboxId` or `team` yet? Run the join routine
    (`.claude/commands/join.md`) first.
 2. **Peek** banner + your inbox card (one call, `widget_ids: [banner id, inboxId]`).
-   - `join now`, `waiting` or `PAUSED`: `sleep 30` and peek again (at most 60 times, 30 min), then tell the
+   - `join now`, `waiting` or `PAUSED`: wait about 30 s and peek again (at most 60 times, 30 min), then tell the
      student the battle hasn't started and stop.
    - `WINS` or `GAME OVER`: say who won and stop.
    - `LIVE`: go.
@@ -31,7 +31,7 @@ Repeat:
    `board.json` `cellIds`.
 2. **Peek** in one call: banner, your inbox card, the square you plan to take and its four
    neighbors, and the square you painted last move.
-   - `WINS` / `GAME OVER` → leave the loop. `PAUSED` → `sleep 30`, peek again.
+   - `WINS` / `GAME OVER` → leave the loop. `PAUSED` → wait about 30 s, peek again.
    - New lines on your card → read them. An undone move tells you why; don't repeat it.
    - The planned square is already yours, or no longer touches you → pick another.
 3. **Paint** it: one `canvas_update_from_svg` call with only `data-miro-id` and `fill`.
