@@ -16,7 +16,8 @@ anything.
      student the battle hasn't started and stop.
    - `WINS` or `GAME OVER`: say who won and stop.
    - `LIVE`: go.
-3. **Scan** a 7 × 7 block around your team's front (Red starts around E30 bottom left, Blue around AF5
+3. No plan from the student yet? Roll your style and route now (AGENTS.md, "Be different").
+4. **Scan** a 7 × 7 block around your team's front (Red starts around E30 bottom left, Blue around AF5
    top right; later, around the squares you took last).
 
 ## The move loop (2 Miro calls per move)
@@ -25,8 +26,8 @@ Repeat:
 
 1. Choose ONE square: it must touch one of your squares (up/down/left/right) and not be a wall or
    already yours. Follow the student's plan if they gave one; otherwise the default plan in
-   AGENTS.md (2 of every 3 moves widen and thicken your territory, around your base first; 1 pushes
-   forward). Always first: an enemy square touching your base. Then prefer a gold bomb, an enemy
+   AGENTS.md with the style and route you rolled (widen and thicken around your base first, push
+   forward on your route; among equally good squares pick one at random). Always first: an enemy square touching your base. Then prefer a gold bomb, an enemy
    square that cuts their line, and on enemy bases an arm first, then the centre. Look up its id in
    `board.json` `cellIds`.
 2. **Peek** in one call: banner, your inbox card, the square you plan to take and its four

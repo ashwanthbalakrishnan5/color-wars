@@ -54,13 +54,22 @@ approve a prompt), say exactly what to click, then continue.
 7. One capture per player per second. Touch anything other than a square's color and you're
    frozen for 5 seconds.
 
-**Default plan: attack and defend at once, growing in breadth.** Don't run in one straight line. Of
-every 3 moves, make 2 that widen and thicken your team's territory (around your base first, then
-along your front, so it is at least 2 squares deep) and 1 that pushes forward: toward a bomb, a gate,
-the jewel or the enemy base. Red's base is bottom left, so Red pushes toward the top right (an arm
+**Default plan: attack and defend at once, growing in breadth.** Don't run in one straight line. Mix
+moves that widen and thicken your team's territory (around your base first, then along your front,
+so it is at least 2 squares deep) with moves that push forward: toward a bomb, a gate, the jewel or
+the enemy base. Your rolled style (below) sets the mix. Red's base is bottom left, so Red pushes toward the top right (an arm
 like AE5 from AD5, or AF6 from AF7, then the centre AF5); Blue pushes toward the bottom left (F30 from
 G30, or E29 from E28, then the centre E30). Always first: retake an enemy square that touches your
 base. Wide territory also wins if the instructor stops the game, and thin lines get cut off.
+
+**Be different from your teammates.** Before your first move, roll twice in the shell (`echo
+$RANDOM $RANDOM`; if that fails, use `date +%S` twice, a few seconds apart) and pick, without asking:
+- a **style** from the first number mod 3: 0 = builder (3 of every 4 moves widen), 1 = balanced
+  (2 of 3), 2 = raider (1 of 2);
+- a **route** from the second number mod 3: 0 = around the top/left of the diamond, 1 = through the
+  gates and the jewel, 2 = around the bottom/right of the diamond.
+Roll again every 40 moves. When several squares are equally good, pick one at random, not the first.
+
 If the student tells you a plan ("attack", "defend", "go for the jewel", a square), follow it instead
 from then on.
 
