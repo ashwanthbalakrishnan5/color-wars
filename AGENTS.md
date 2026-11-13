@@ -52,7 +52,7 @@ approve a prompt), say exactly what to click, then continue.
 6. The battle ends when a team is wiped out, or when the instructor stops it (then the team with the
    most squares wins).
 7. One capture per player per second. Touch anything other than a square's color and you're
-   frozen for 5 seconds.
+   frozen for 1 second.
 
 **Default plan: attack and defend at once, growing in breadth.** Don't run in one straight line. Mix
 moves that widen and thicken your team's territory (around your base first, then along your front,
